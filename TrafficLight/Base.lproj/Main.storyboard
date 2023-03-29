@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="PC9-zZ-crA">
-                                <rect key="frame" x="157" y="101" width="100" height="450"/>
+                                <rect key="frame" x="157" y="105" width="100" height="450"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSc-9N-QCq">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -40,9 +41,15 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w74-3B-ZZ8">
-                                <rect key="frame" x="157.5" y="737" width="99" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="START"/>
+                                <rect key="frame" x="157" y="743" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="FXm-r6-efn"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.87843137979999997" green="0.96862745289999996" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="pressStartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSC-o8-1fT"/>
                                 </connections>
@@ -51,11 +58,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PC9-zZ-crA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:224" id="7ol-r2-sSW"/>
                             <constraint firstItem="PC9-zZ-crA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FDa-Uj-Oue"/>
                             <constraint firstItem="w74-3B-ZZ8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rgh-SX-U0l"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w74-3B-ZZ8" secondAttribute="bottom" constant="94" id="e1I-lI-etP"/>
-                            <constraint firstItem="w74-3B-ZZ8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="67:896" constant="32" id="gs5-mg-V44"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w74-3B-ZZ8" secondAttribute="bottom" constant="89" id="mA5-7F-h6Y"/>
                             <constraint firstItem="PC9-zZ-crA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="mKe-PK-yCu"/>
                         </constraints>
                     </view>
@@ -68,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
+            <point key="canvasLocation" x="-1091.304347826087" y="-196.20535714285714"/>
         </scene>
     </scenes>
     <resources>
